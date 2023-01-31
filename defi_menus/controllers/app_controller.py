@@ -1,9 +1,9 @@
-from defi_menus.controllers.home_menu_controller import HomeMenuController
-
-class AppController():
+from defi_menus.controllers.menu_controller import MenuController
+from defi_menus.controllers import constants
+class AppController:
     
     def start_app(self):
-        self.controller = HomeMenuController()
+        self.controller = MenuController(constants.HOME, "")
         while self.controller:
             self.controller = self.controller.run()
 

@@ -1,4 +1,4 @@
-from .controllers.app_controller import AppController
+from defi_menus.controllers.app_controller import AppController
 
 
 def main():
